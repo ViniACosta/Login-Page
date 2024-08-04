@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Syne', sans-serif;
+  border: none;
+}
+
+:root {
+  --color-background: #1d4b83;
+  --color-text: #ffffff;
+  --second-bg-color: #0000CD;
+
+  --h2-font-size: 1.5em;
+}
+
+body, html {
+  display: flex;
+  background-color: var(--color-background);
+  justify-content: center;
+  align-items: center;
+}
+
+
+#box {
+  margin: 100px;
+  padding: 75px;
+  width: 380px;
+  height: 380px;
+  text-align: center;
+  font-size: var(--h2-font-size);
+  justify-content: center;
+  align-items: center;
+  display: block;
+  background: linear-gradient(45deg, rgb(83, 212, 255), blue , rgb(5, 42, 85));
+  color: var(--color-text);
+  border-radius: 15px;
+  animation: rgbAnimation 5s ease infinite;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 54px 55px, 
+              rgba(0, 0, 0, 0.22) 0px -12px 30px, 
+              rgba(0, 0, 0, 0.22) 0px 4px 6px, 
+              rgba(0, 0, 0, 0.27) 0px 12px 13px, 
+              rgba(0, 0, 0, 0.29) 0px -3px 5px;
+}
+
+
+input[type="text"] {
+  margin-bottom: 1.5em;
+  padding: 3px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+input[type="password"] {
+  padding: 3px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.enviar {
+  margin-top: 20px;
+  background-color: #2196F3;
+  border-radius: 25px;
+  color: #ffffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+}
+
+.enviar:hover {
+  transform: scale(1.2);
+  background-color: rgb(83, 212, 255);
+}
+
+
+a p {
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: whitesmoke;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
