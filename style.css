@@ -21,6 +21,14 @@ body, html {
   align-items: center;
 }
 
+footer {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: var(--second-bg-color);
+  color: var(--color-text);
+  text-align: center;
+  border-radius: 3rem;
+}
 
 #box {
   margin: 100px;
