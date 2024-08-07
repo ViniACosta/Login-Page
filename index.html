@@ -12,27 +12,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Login Page</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
   <body>
     <div id="box">
+      <form>
     <div>
       <i class="ri-user-fill"></i>
       <label for="email">E-Mail</label>
-      <input type="text" id="username" name="username">
+      <input type="email" placeholder="Digite seu e-mail" id="email" name="email" autofocus="true" required>
+      <span id="emailError" class="error-message"></span>
     </div>
 
-    <div id="senha">
+    
       <i class="ri-lock-2-line"></i>
       <label for="password">Senha</label>
-      <input type="password" id="password" name="password" minlength="8" required>
+      <div class="senha">
+      <input type="password" placeholder="Digite sua senha" id="password" name="password" minlength="8" required>
+      <span id="togglePassword" class="toggle-password">
+        <i class="fas fa-eye"></i>
+    </span>
     </div>
 <input class="enviar" type="submit" value="Enviar">
 
 
   <a href="#"><p>Ainda não possui uma conta?</p></a>
     <a href="#"><p>Esqueci minha senha</p></a>
-
+</form>
 
 <footer>&copy;Copyright by Vinicius Costa</footer>
+  <script src="script.js"></script>
   </body>
 </html>

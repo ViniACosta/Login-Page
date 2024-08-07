@@ -52,7 +52,7 @@ footer {
 }
 
 
-input[type="text"] {
+input[type="email"] {
   margin-bottom: 1.5em;
   padding: 3px;
   border-radius: 5px;
@@ -90,4 +90,9 @@ a p {
   color: whitesmoke;
   text-decoration: underline;
   text-decoration-color: whitesmoke;
+}
+
+.error-message {
+  color: red;
+  display: none;
 }
